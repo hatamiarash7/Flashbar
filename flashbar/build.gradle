@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/hatamiarash7/Flashbar'
     gitUrl = 'https://github.com/hatamiarash7/Flashbar'
 
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.0'
 
     developerId = 'hatamiarash7'
     developerName = 'Arash Hatami'
