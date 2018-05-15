@@ -1,0 +1,23 @@
+<resources>
+	<string name="app_name">TiTar</string>
+	<string name="app_name_fa">تیتار</string>
+	<string name="action_settings">تنظیمات</string>
+	<string name="wait">لطفا منتظر بمانید</string>
+	<string name="internet_check">چک کردن اینترنت</string>
+
+	<string name="field_email">آدرس ایمیل</string>
+	<string name="field_password">کلمه عبور</string>
+
+	<string name="btn_login">ورود</string>
+	<string name="btn_go_login">حساب کاربری دارید ؟ وارد شوید</string>
+	<string name="btn_register">ثبت نام</string>
+	<string name="btn_go_register">حساب کاربری ندارید ؟ ثبت نام کنید</string>
+	<string name="btn_forget">رمز عبور را فراموش کرده اید ؟</string>
+	<string name="btn_logout">خروج</string>
+	<string name="btn_google"> گوگل</string>
+	<string name="btn_github"> گیت هاب</string>
+
+	<string name="url_host">titar.ir</string>
+	<string name="url_api">http://%1$s/api/</string>
+	<string name="url_check">http://%1$s/api/200</string>
+</resources>

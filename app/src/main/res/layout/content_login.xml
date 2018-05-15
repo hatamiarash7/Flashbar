@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context=".activities.LoginActivity"
+	tools:ignore="ContentDescription"
+	tools:showIn="@layout/activity_login">
+
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="centerCrop"
+		app:srcCompat="@drawable/vr_elements"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/btns"
+		android:layout_below="@+id/logo"
+		android:gravity="center_vertical|center"
+		android:orientation="vertical">
+
+		<ir.hatamiarash.titar.views.CustomMaterialTextField
+			android:id="@+id/email_field"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			android:textAlignment="center"
+			app:mtf_backgroundColor="@color/White"
+			app:mtf_cardCollapsedHeight="4dp"
+			app:mtf_image="@drawable/ic_email"
+			app:mtf_labelColor="@color/White"
+			app:mtf_openKeyboardOnFocus="true">
+
+			<EditText
+				android:id="@+id/email"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/field_email"
+				android:inputType="textEmailAddress"
+				android:textColor="@color/Black"
+				android:textSize="16sp"/>
+		</ir.hatamiarash.titar.views.CustomMaterialTextField>
+
+		<ir.hatamiarash.titar.views.CustomMaterialTextField
+			android:id="@+id/password_field"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			android:textAlignment="center"
+			app:mtf_backgroundColor="@color/White"
+			app:mtf_cardCollapsedHeight="4dp"
+			app:mtf_image="@drawable/ic_key"
+			app:mtf_labelColor="@color/White"
+			app:mtf_openKeyboardOnFocus="true">
+
+			<EditText
+				android:id="@+id/password"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/field_password"
+				android:inputType="textPassword"
+				android:textColor="@color/Black"
+				android:textSize="16sp"/>
+		</ir.hatamiarash.titar.views.CustomMaterialTextField>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/btns"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/reg"
+		android:layout_marginBottom="5dp"
+		android:orientation="horizontal">
+
+		<mehdi.sakout.fancybuttons.FancyButton
+			android:id="@+id/btnGoogle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_marginEnd="16dp"
+			android:layout_marginStart="16dp"
+			android:layout_weight="1"
+			android:padding="12dp"
+			app:fb_borderColor="@color/md_red_500"
+			app:fb_borderWidth="1dp"
+			app:fb_defaultColor="@color/md_red_500"
+			app:fb_focusColor="@color/md_red_800"
+			app:fb_iconPosition="right"
+			app:fb_radius="30dp"
+			app:fb_text="@string/btn_google"
+			app:fb_textColor="@color/md_white_1000"
+			app:fb_textSize="15dp"/>
+
+		<mehdi.sakout.fancybuttons.FancyButton
+			android:id="@+id/btnGithub"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_marginEnd="16dp"
+			android:layout_marginStart="16dp"
+			android:layout_weight="1"
+			android:padding="12dp"
+			app:fb_borderColor="@color/md_grey_700"
+			app:fb_borderWidth="1dp"
+			app:fb_defaultColor="@color/md_grey_700"
+			app:fb_focusColor="@color/md_grey_900"
+			app:fb_iconPosition="right"
+			app:fb_radius="30dp"
+			app:fb_text="@string/btn_github"
+			app:fb_textColor="@color/md_white_1000"
+			app:fb_textSize="15dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/reg"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/MyDarkBlue"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/btn_go_register"
+			android:textColor="@color/White"
+			android:textSize="16sp"/>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/logo"
+		android:layout_width="match_parent"
+		android:layout_height="64dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="100dp"
+		android:scaleType="fitCenter"
+		app:srcCompat="@drawable/logo"/>
+
+</RelativeLayout>
