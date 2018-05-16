@@ -3,49 +3,43 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'flashbar'
-
-    publishedGroupId = 'ir.hatamiarash.flashbar'
-    libraryName = 'flashbar'
-    artifact = 'flashbar'
-
-    libraryDescription = 'A highly customizable, powerful and easy-to-use alerting library for Android ( RTL Version )'
-
-    siteUrl = 'https://github.com/hatamiarash7/Flashbar'
-    gitUrl = 'https://github.com/hatamiarash7/Flashbar'
-
-    libraryVersion = '1.0.0'
-
-    developerId = 'hatamiarash7'
-    developerName = 'Arash Hatami'
-    developerEmail = 'hatamiarash7@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
+	bintrayRepo = 'maven'
+	bintrayName = 'flashbar'
+	publishedGroupId = 'ir.hatamiarash.flashbar'
+	libraryName = 'flashbar'
+	artifact = 'flashbar'
+	libraryDescription = 'A highly customizable, powerful and easy-to-use alerting library for Android ( RTL Version )'
+	siteUrl = 'https://github.com/hatamiarash7/Flashbar'
+	gitUrl = 'https://github.com/hatamiarash7/Flashbar'
+	libraryVersion = '1.0.0'
+	developerId = 'hatamiarash7'
+	developerName = 'Arash Hatami'
+	developerEmail = 'hatamiarash7@gmail.com'
+	licenseName = 'The Apache Software License, Version 2.0'
+	licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+	allLicenses = ["Apache-2.0"]
 }
 
 android {
-    compileSdkVersion versions.sdkTarget
+	compileSdkVersion versions.sdkTarget
 
-    defaultConfig {
-        minSdkVersion versions.sdkMin
-        targetSdkVersion versions.sdkTarget
-        versionCode 1
-        versionName "1.0.0"
+	defaultConfig {
+		minSdkVersion versions.sdkMin
+		targetSdkVersion versions.sdkTarget
+		versionCode 1
+		versionName "1.0.0"
 
-        consumerProguardFiles 'proguard-rules.pro'
-    }
-	
+		consumerProguardFiles 'proguard-rules.pro'
+	}
+
 	lintOptions {
 		abortOnError false
 	}
 }
 
 dependencies {
-    implementation "com.android.support:appcompat-v7:$versions.supportVersion"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
+	implementation "com.android.support:appcompat-v7:$versions.supportVersion"
+	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
 }
 
 apply from: 'https://raw.githubusercontent.com/aritraroy/LibUtils/master/install.gradle'
